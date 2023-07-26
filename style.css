@@ -2,7 +2,7 @@
 
 * {
  font-family: "DM Sans", sans-serif;
- overflow-x: hidden;
+ list-style: none;
 }
 .hero1 .navbar a{
  color: #fff !important;
@@ -35,6 +35,7 @@
  background-blend-mode: darken;
  color: white;
  height: 100vh;
+ overflow: hidden;
 }
 .content h1, .content2 h1  {
  font-size: 58px;
@@ -73,7 +74,7 @@
    'opsz' 48
  }
  .hero2 {
- overflow-y: hidden;
+ overflow: hidden;
  }
  .hero2 .navbar-nav li{
   line-height: 22px;
@@ -105,14 +106,55 @@ margin: 10% 0 4% 0;
  justify-content: space-between;
  margin-top: 10%;
 }
-.next2 span {
+.next2 span, .next3 span {
   color: #1E0E62;
 }
 .hero2-img img {
   width: 600px;
-  height: 750px;
+  height: 100vh
 }
-
+.hero3 {
+  background: rgba(89, 46, 190, 0.541)url("./image/hill.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: color-burn;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+ }
+ .content3 .logo{
+  font-size: 24px;
+  line-height: 31.25px;
+  letter-spacing: -0.29px;
+  font-weight: 700;
+  margin-top: 70px;
+ }
+ .content3 h1 {
+ font-size: 72px;
+ font-weight: 700;
+ line-height: 86px;
+ letter-spacing: -1px;
+ }
+ .content3 p {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 32px;
+  }
+  .content3 .content-btn button {
+    background-color: #482BE7;
+    border: none;
+    padding: 0 60px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 70px;
+  }
+  .next3 span {
+    margin-top: 250px;
+  }
  @keyframes pulse {
   0% {
    transform: scale(0.9);
@@ -128,7 +170,7 @@ margin: 10% 0 4% 0;
   cursor: pointer;
   
  }
- .next .material-symbols-outlined:hover, .next2 .material-symbols-outlined:hover{
+ .next .material-symbols-outlined:hover, .next2 .material-symbols-outlined:hover, .next3 .material-symbols-outlined:hover{
   color: #25dac5;
  }
 
