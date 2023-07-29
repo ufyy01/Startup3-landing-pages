@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,800;1,700&display=swap');
-
+/* default styling */
 * {
  font-family: "DM Sans", sans-serif;
  list-style: none;
@@ -7,8 +7,9 @@
 body {
   margin: 0;
   height: 100vh;
-  overflow: hidden;
 }
+/* default styling ends */
+
 /* background section styling */
 .hero1 {
   background: rgba(68, 69, 124, 0.534)url("./image/bird.png");
@@ -17,7 +18,12 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-blend-mode: color-burn;
-  color: white;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+ }
+ .hero2 {
+  overflow: hidden;
   height: 100vh;
   width: 100vw;
  }
@@ -29,17 +35,25 @@ body {
   background-attachment: fixed;
   background-blend-mode: color-burn;
   height: 100vh;
-  /* overflow: hidden; */
-  color: #fff;
+  width: 100vw;
+  overflow: hidden;
  }
-
-
-
-
-
-
+ .hero4 {
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+ }
+ .hero5 {
+  background-color: #2f1893;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+}
 /* background section styling ends */
-.hero1 .navbar-nav a, .hero1 .navbar-brand,  .content3 .logo, .hero5 .navbar-brand, .content5 h2, .content5 p, .hero3 .navbar-nav a, .next3 span, .hero5 .navbar-nav a  {
+
+.hero1, .hero1 .navbar-nav a, .hero1 .navbar-brand,  .content3 .logo, .hero5 .navbar-brand, .content5 h2, .content5 p, .hero3 .navbar-nav a, .next3 span, .hero5 .navbar-nav a, .content3 h1, .content3 p {
  color: #fff !important;
 }
 
@@ -61,7 +75,12 @@ body {
  text-align: center;
  line-height: 70px;
  }
-
+.content h1 {
+  margin-bottom: 100px;
+}
+.content p {
+  margin-top: 100px;
+}
  .content p, .content2 p, .page5-video p, .content-left p {
   font-size: 18px;
   font-weight: 500;
@@ -119,10 +138,10 @@ margin: 10% 0 4% 0;
  margin-top: 40px;
 }
 .next2 span, .next3 span, .hero4 .navbar-nav a, .hero4 .navbar-light .navbar-nav .nav-link {
-  color: #1E0E62;
+  color: #1E0E62 !important;
 }
 .hero2-img img {
-  width: 600px;
+  width: 550px;
   height: 100vh;
 }
 
@@ -163,7 +182,6 @@ margin: 10% 0 4% 0;
     line-height: 26px;
   }
   .next3 span {
-    margin-top: 255px;
     font-size: 30px;
   }
   .active {
@@ -187,14 +205,7 @@ margin: 10% 0 4% 0;
  .next .material-symbols-outlined:hover, .next2 .material-symbols-outlined:hover, .next3 .material-symbols-outlined:hover{
   color: #25dac5;
  }
-.hero5 {
-  background-color: #2f1893;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  width: 100%;
-  height: 100%;
-}
+
 .footer-content {
   justify-content: space-between;
 }
@@ -205,29 +216,53 @@ margin: 10% 0 4% 0;
 .content-right {
 margin: 50px 0 0 100px ;
 }
-.hero4-link{
-  margin-left: 360px;
-}
-.hero4 .nav-item {
+/* .hero4 .nav-item {
   margin-right: 20px;
-}
+} */
 
  @media screen and 
 (max-width: 650px) {
-  .hero1 {
+  .hero1, .hero2, .hero3, .hero4 {
     overflow-y: scroll;
   }
- .content-div, .content2 {
-  margin: 0 5px;
-  padding: 0 20px;
+ .hero1 .content-div{
+  margin: 100px 0 5px 0;
+  padding: 0 40px;
  }
- .content h1, .content2 h1 {
-  font-size: 30px;
+ .hero1 .navbar-brand, .hero3 .logo {
+  font-size: 18px;
+ }
+ .content h1 {
+  font-size: 25px;
   line-height: 40px;
  }
- .content p, .content2 p {
+.content2 h1, .content3 h1 {
+  font-size: 35px;
+  text-align: center;
+  line-height: 40px;
+ }
+ .content-left h1 {
+  padding: 0 15px;
+ }
+.content3 h1, .content-left h1 {
+  font-size: 50px;
+  line-height: 50px;
+ }
+ .content p, .content2 p, .content3 p, .content-left p {
   font-size: 16px;
   line-height: 20px;
+  padding: 0 10px;
+ }
+ .content2 .para1, .content-left p {
+  padding: 15px 60px;
+  text-align: center;
+ }
+ .content2 .para2 {
+  padding: 12px 50px;
+  text-align: center;
+ }
+ .content-text {
+  margin-top: 100px;
  }
  .play_icon {
   width: 50px;
@@ -237,13 +272,59 @@ margin: 50px 0 0 100px ;
  .play_icon span {
   margin: 8px;
  }
- .break {
-  display: none;
- }
- .hero2-img img{
+ .hero2-img img {
   width: 300px;
   height: 400px;
+  border-radius: 20px;
+ }
+ .content-right {
+  margin-right: 20%;
+ }
+ .content-right img {
+  width: 95%;
+  }
+  .content-left .content-btn button{
+    margin-left: 26%;
+  }
+ .hero2 button[type="button"], .hero2 .inactive {
+  padding: 10px 20px;
  }
 }
 
-@media screen and (min-width: 670px) {}
+@media screen and 
+(min-width: 651px) and (max-width: 991px ) {
+  .hero1, .hero2, .hero3,.hero4 {
+    overflow-y: scroll;
+  }
+.content h1 {
+  font-size: 45px;
+  line-height: 55px;
+  margin-bottom: 100px;
+  padding: 0 50px;
+}
+.content p {
+  margin-top: 150px;
+  padding: 0 40px;
+}
+ .hero2-img img{
+  border-radius: 30px;
+  width: 50%;
+  height: 60%;
+ }
+ .hero2 button[type="button"], .hero2 .inactive {
+  margin: 20px 0;
+  padding: 10px 25px;
+ }
+ .content2 .para1 {
+  text-align: center;
+ }
+ .content2 .para2 {
+  text-align: center;
+ }
+ .content-text {
+  padding-top: 100px;
+ }
+ .content-right {
+  margin: 50px 0 0 10px ;
+  }
+}
