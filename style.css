@@ -288,6 +288,9 @@ body {
   font-size: 50px;
   line-height: 50px;
  }
+ .content-text {
+  margin: 20px 0;
+ }
  .content p, .content2 p, .content3 p, .content-left p, .content5 p {
   font-size: 16px;
   line-height: 20px;
